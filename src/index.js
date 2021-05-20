@@ -1,4 +1,8 @@
+// index.js
 'use strict';
 
-const sum = (a, b) => a + b;
+import sum from './sum';
+import multiply from './multiply';
+
 console.log('sum: ', sum(7, 6));
+console.log('multiply: ', multiply(7, 6));
