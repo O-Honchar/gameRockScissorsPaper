@@ -1,7 +1,7 @@
 {
   "name": "gameRockScissorsPaper",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "repository": "https://github.com/O-Honchar/gameRockScissorsPaper.git",
   "author": "Oleh Honchar <O.O.Honchar@gmail.com>, Eugene Volkov <eugenewolf507@gmail.com>",
   "license": "MIT",

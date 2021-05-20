@@ -1,13 +1,10 @@
-// webpack.config.js
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-    mode: 'development',
-    entry: {
-        main: path.resolve(__dirname, './src/index.js'),
-    },
-    output: {
-        path: path.resolve(__dirname, './dist'),
-        filename: 'index.bundle.js',
-    },
-}
+  mode: 'production',
+  entry: './src/index.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+};
