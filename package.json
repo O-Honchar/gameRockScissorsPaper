@@ -6,6 +6,7 @@
   "author": "Oleh Honchar <O.O.Honchar@gmail.com>, Eugene Volkov <eugenewolf507@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
   },
