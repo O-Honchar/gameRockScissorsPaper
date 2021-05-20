@@ -1,1 +1,0 @@
-(()=>{"use strict";const o=function(o,n){return o+n};console.log("sum: ",o(7,6)),console.log("multiply: ",function(n,t){for(var r=0,u=0;u<t;u++)r=o(n,r);return r}(7,6))})();

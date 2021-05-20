@@ -1,5 +1,6 @@
 // index.js
 'use strict';
+import './../scss/main.scss';
 
 import sum from './sum';
 import multiply from './multiply';
