@@ -5,7 +5,7 @@ console.log(sum(3, 5));
 
 function component() {
   const element = document.createElement('div');
-  const arr = ['Hello', 'webpack'];
+  const arr = ['Hello', 'webpack', '!'];
   element.innerHTML = arr.join(' ');
   return element;
 }
