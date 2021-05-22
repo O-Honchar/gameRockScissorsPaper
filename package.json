@@ -6,6 +6,9 @@
   "author": "Oleh Honchar <O.O.Honchar@gmail.com>, Eugene Volkov <eugenewolf507@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
     "css-loader": "^5.2.5",
     "eslint": "^7.27.0",
     "eslint-webpack-plugin": "^2.5.4",
@@ -22,6 +25,5 @@
   "scripts": {
     "build": "webpack",
     "serve": "webpack serve --open",
-    "lint": "eslint ./"
   }
 }
