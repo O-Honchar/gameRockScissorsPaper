@@ -35,7 +35,9 @@ module.exports = {
       template: './src/index.html',
     }),
     new MiniCssExtractPlugin(),
-    new ESLintPlugin(),
+    new ESLintPlugin({
+      failOnError: true,
+    }),
   ],
   output: {
     filename: 'app.js',
