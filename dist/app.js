@@ -1,0 +1,1 @@
+(()=>{"use strict";function e(){console.log("I get called from print.js!")}dsafgtasdjgf,asdasdasd,console.log(8),document.body.appendChild(function(){const n=document.createElement("div");n.innerHTML=["Hello","webpack","!"].join(" ");const o=document.createElement("button");return o.innerHTML="Click me and check the console!",o.onclick=e,n.appendChild(o),n}())})();
