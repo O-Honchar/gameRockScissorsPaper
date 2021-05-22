@@ -24,6 +24,6 @@
   },
   "scripts": {
     "build": "webpack",
-    "serve": "webpack serve --open",
+    "serve": "webpack serve --open"
   }
 }
