@@ -1,6 +1,8 @@
 // 'use strict';
-import printMe from './print.js';
+import printMe from './scripts/print.js';
 import './main.scss';
+
+asdasdasd;
 
 const sum = (a, b) => a + b;
 console.log(sum(3, 5));

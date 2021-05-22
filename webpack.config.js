@@ -1,6 +1,7 @@
-const path = require('path');
+// const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -34,6 +35,7 @@ module.exports = {
       template: './src/index.html',
     }),
     new MiniCssExtractPlugin(),
+    new ESLintPlugin(),
   ],
   output: {
     filename: 'app.js',
