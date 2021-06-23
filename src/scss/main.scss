@@ -1,0 +1,58 @@
+@import "variables.scss";
+
+@mixin style-fonts($font-size, $font-style, $font-weight, $font-color) {
+  font: $font-size $font-style;
+  font-weight: $font-weight;
+  color: $font-color;
+}
+
+%d-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+%text-align-center {
+  text-align: center;
+}
+
+.game-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  h1 {
+    @extend %text-align-center;
+    @include style-fonts(3rem, $font-style, 700, $font-color);
+  }
+  h2 {
+    @extend %text-align-center;
+    @include style-fonts(2rem, $font-style, 700, $font-color);
+  }
+  ul {
+    @include style-fonts(1.5rem, $font-style, 400, $font-color);
+    padding-bottom: 1rem;
+    width: 17rem;
+    margin: 0 auto;
+  }
+  .button-wrapper {
+    @extend %d-flex;
+    padding-bottom: 2rem;
+    img {
+      display: block;
+      padding: 1rem;
+      width: 100px;
+      height: auto;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      width: 70px;
+    }
+  }
+  .results-wrapper {
+    p {
+      @extend %text-align-center;
+      @include style-fonts(1.5rem, $font-style, 400, $font-color);
+    }
+  }
+}

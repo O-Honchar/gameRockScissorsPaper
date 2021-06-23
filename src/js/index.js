@@ -1,13 +1,13 @@
 // index.js
 'use strict';
 
-// import './../scss/main.scss';
+import './../scss/main.scss';
 
 import mChoice from './randomizer';
 import {game, reset} from './game';
 
 const buttons = document.querySelector('#buttons');
-const uChoice = event => event.target.dataset.choice;
+const uChoice = event => event.target.parentElement.dataset.choice;
 const minRound = 1;
 const maxRound = 3;
 
