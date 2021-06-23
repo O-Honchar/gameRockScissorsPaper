@@ -1,29 +1,43 @@
 <!-- src/template.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
     <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-    <h1>Let’s play!</h1>
-    <h2>Rules:</h2>
-    <ul>
-        <li>Scissors beats a paper,</li>
-        <li>Paper beats rock,</li>
-        <li>Rock beats scissors.</li>
-        <li>And we play up to three wins!</li>
-    </ul>
-    <div class="button-wrapper" id="buttons">
-        <button data-choice="Scissors">Scissors</button>
-        <button data-choice="Paper">Paper</button>
-        <button data-choice="Rock">Rock</button>
-        <button data-choice="Reset">Reset</button>
-    </div>
-    <div class="results-wrapper" id="results">
-        
-    </div>
-</body>
+  </head>
+  <body>
+      <div class="game-wrapper">
+        <h1 class="container">Let’s play!</h1>
+        <h2>Rules:</h2>
+        <ul>
+          <li>Scissors beats a paper,</li>
+          <li>Paper beats rock,</li>
+          <li>Rock beats scissors.</li>
+          <li>And we play up to three wins!</li>
+        </ul>
+        <div class="button-wrapper" id="buttons">
+          <div data-choice="Scissors">
+            <img src="<%=require('./img/scissors.png')%>" alt="Scissors image" />
+            <button>Scissors</button>
+          </div>
+          <div data-choice="Paper">
+            <img src="<%=require('./img/paper.png')%>" alt="Paper image" />
+            <button>Paper</button>
+          </div>
+          <div data-choice="Rock">
+            <img src="<%=require('./img/rock.png')%>" alt="Rock image" />
+            <button>Rock</button>
+          </div>
+          <div data-choice="Reset">
+            <img src="<%=require('./img/reset.png')%>" alt="Reset image" />
+            <button>Reset</button>
+          </div>
+        </div>
+        <div class="results-wrapper" id="results"></div>
+      </div>    
+  </body>
 </html>
