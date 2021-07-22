@@ -1,4 +1,5 @@
 {
+  "homepage": "https://o-honchar.github.io/gameRockScissorsPaper/dist",
   "name": "gameRockScissorsPaper",
   "version": "1.0.0",
   "main": "index.js",
